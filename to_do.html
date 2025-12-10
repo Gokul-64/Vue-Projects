@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To do List Application</title>
+    <link rel="stylesheet" href="to_do.css"> 
+</head>
+<body>
+    <div class="header">
+        To-do List
+    </div>
+    <div class="container">
+        <div id="app">
+            <div class="one">
+                <div id="add">
+                    <input v-model="text" placeholder="Enter a new task..."> 
+                    <button @click="addtasks()">Add task</button>
+                </div>
+                <ul> 
+                    <li v-for="task in filteredTasks"> 
+                        <input type="checkbox" v-model="task.checked"> 
+                        <span :class="{ 'completed': task.checked }">{{ task.ind }} - {{ task.task }}</span>
+                        <button @click="removetasks(task.ind)">Remove</button>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <button @click="filterAll()">All Tasks</button> 
+                    <button @click="filterChecked()">Completed</button>
+                    <button @click="filterUnChecked()">Active</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="to_do.js"></script>
+</body>
+</html>

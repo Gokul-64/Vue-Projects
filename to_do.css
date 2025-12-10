@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+    background-color: black;
+}
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 600;
+    height: 2em;
+    letter-spacing: 0.0525em;
+    background-color: bisque;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#add{
+    display: flex;
+    gap: 1em;
+}
+#add > button, li > button,.buttons button{
+    cursor: pointer;
+    width: fit-content;
+    padding: 0.68em 0.87em;
+    font-weight: 600;
+    color: white;
+    background-color: cornflowerblue;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+#add > input
+{
+    padding: 0.68em 0.87em;
+    font-family: 'Lucida Sans';
+    font-size: 1em;
+    width: 20em;
+}
+ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+li{
+    display: flex;
+    gap: 1em;
+    color: white;
+    align-items: center;
+}
+li > span{
+    font-size: 1.3em;
+    letter-spacing: 0.06em;
+}
+li > button{
+    padding: 0.5em 0.8em;
+    background-color: tomato;
+}
+input[type='checkbox']{
+    accent-color: green;
+    width: 1em;
+    height: 1em;
+}
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+.buttons button{
+    background-color: antiquewhite;
+    color: rgb(207, 0, 0);
+    font-size: 1em;
+}
