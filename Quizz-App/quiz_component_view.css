@@ -1,0 +1,55 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: center;
+    width: 400px;
+    margin: 0 auto;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.25); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 15px; 
+    margin-top: 20em;
+}
+.root > label{
+    font-size: 1.5vw;
+    color: white;
+}
+.root > div{
+    font-size: 1.2vw;
+    letter-spacing: 0.1em;
+    display: flex;
+    gap:0.3em;
+    text-align: left;
+}
+.root > .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.root > .buttons button{
+    width: fit-content;
+    min-width: 4.75em;
+    padding: 0.37em 0.77em;
+    font-size: 1vw;
+    border: 1px solid transparent;
+    border-radius: 0.2em;
+    font-weight: 700;
+    cursor: pointer;
+    color: aliceblue;
+}
+.previous{
+    background-color: grey;
+}
+.next{
+    background-color: blue;
+}
+.clear{
+    background-color: tomato;
+}
+input[type="radio"]{
+    accent-color: rgb(219, 85, 32);
+    width: 1vw;
+    height: 1.2vw;
+}
